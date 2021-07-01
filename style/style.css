@@ -1,0 +1,221 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+/* 가이드 라인 */
+/*div#wrap{border: 1px solid #000;}*/
+/*header#header{border: 1px solid #000;}*/
+
+/* 가이드 라인 끝 */
+
+/* div#headerFrame */
+div#headerFrame {
+/*    border: 1px solid #000; */
+    border-top: 2px solid #284a7e;
+}
+div#headerFrame>header#header {
+    width: 1220px;
+    height: 126px;
+/*    border: 1px solid #aaa; */
+    margin: 0 auto;
+    align-items: flex-end;
+}
+
+#headerFrame #headerLogo a {
+    width: 183px;
+    height: 40px;
+    margin-bottom: 30px;
+   /* border: 1px solid #000; */
+    background-image: url(../images/common/header_logo.gif);
+    display: inline-block;
+}
+
+#headerMenuArea {
+/*    border: 1px solid #f80; */
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#headerFrame nav {
+    height: 50px;
+    padding-bottom: 30px;
+    justify-content: flex-end;
+    align-items: flex-end;
+/*    border: 1px solid #08f; */
+}
+
+#headerFrame nav#headerLNB {
+    margin-right: 70px;
+    text-align: right;
+}
+#headerFrame nav#headerLNB span {
+    font-size: 15px;
+    margin: 0 3px;
+    color: #42619a;
+}
+
+#headerFrame nav#headerLNB span:not(:nth-child(2)) {
+    cursor: pointer;
+}
+
+        /* nav#gnb */
+#headerFrame nav#gnb {
+    padding: 0 30px;
+}
+#headerFrame nav#gnb ul#mainMenu>li {
+    /*border: 1px solid #000;*/
+    position: relative;
+}
+#headerFrame nav#gnb ul#mainMenu>li:first-child,
+#headerFrame nav#gnb ul#mainMenu>li:first-child>ul {
+    width: 180px;
+}
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(2),
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(2)>ul{
+    width: 208px;
+}
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(3),
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(3)>ul{
+    width: 190px;
+}
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(4),
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(4)>ul{
+    width: 180px;
+}
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(5),
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(5)>ul{
+    width: 220px;
+}
+#headerFrame nav#gnb ul#mainMenu {
+    align-items: flex-end;
+    height: 100%;
+}
+#headerFrame nav#gnb ul.subMenu {
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    position: absolute;
+    top: 54px;
+    display: none;
+    z-index: 10;
+}
+#headerFrame nav#gnb ul.subMenu img {
+    position: relative;
+    left: -9px;
+}
+#headerFrame nav#gnb li.mainLi>a {
+    width: 100%;
+    font-size: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    display: inline-block;
+    /*border: 1px solid #000;*/
+}
+#headerFrame nav#gnb li.subLi>a {
+    padding: 0 20px;
+    font-size: 13px;
+    line-height: 32px;
+}
+#headerFrame nav#gnb li.subLi {
+    padding: 4px 0;
+}
+
+#headerFrame nav#gnb li.subLi:hover {
+    background-color: #f56254;
+}
+#headerFrame nav#gnb li.subLi:hover>a {
+    color: #fff;
+}
+        /* nav#gnb */
+/* div#headerFrame */
+
+/* div#gnbBGFrame */
+div#gnbBGFrame {
+    width: 100%;
+    height: 242px;
+    border-bottom: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+}
+
+div#gnbBG {
+    width: 100%;
+    height: 254px;
+}
+/* div#gnbBGFrame */
+
+div#searchArea {
+    width: 100%;
+    height: 710px;
+    padding-top: 70px;
+    background-image: url(../images/contents/visua_a.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+div#searchArea>h1 {
+    color: #fff;
+    width: 600px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    margin: 50px auto;
+}
+div#searchArea>div#searchBG {
+    width: 760px;
+    padding: 26px 26px;
+    /*border: 1px solid #000; */
+    border-radius: 50px;
+    margin: 0 auto;
+    padding-top: 18px;
+    background-color: #fff;
+    background-image: url(../images/contents/._btn_search.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+div#searchArea>div#searchBG>span {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+div#searchArea>div#searchBG>span#closeMark {
+    color: #666;
+    width: 36px;
+    text-align: center;
+    line-height: 36px;
+
+
+    background-image: url(../images/common/btn_delete.png);
+    background-repeat: no-repeat;
+    background-position: left;
+
+    transform: translate(10px, 10px);
+
+    visibility: hidden;
+}
+
+div#searchArea>div#searchBG>span#searchMark {
+    background-image: url(../images/contents/btn_search.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    transform: translateY(11px);
+
+}
+div#searchArea>div#searchBG>input {
+    color: #666;
+    width: 620px;
+    font-size: 17px;
+    padding: 9px;
+    border: none;
+}
+
+    /* placeholder 속성에 css적용 */
+div#searchArea>div#searchBG>input::placeholder {
+    /* 슈도 엘리먼트 속성 */
+    color: #aaa;
+    font-size: 19px;
+}
