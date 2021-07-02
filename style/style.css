@@ -156,7 +156,7 @@ div#searchArea {
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-div#searchArea>h1 {
+div#searchArea>form>h1 {
     color: #fff;
     width: 600px;
     text-align: center;
@@ -164,7 +164,7 @@ div#searchArea>h1 {
     font-size: 40px;
     margin: 50px auto;
 }
-div#searchArea>div#searchBG {
+div#searchArea>form>div#searchBG {
     width: 760px;
     padding: 26px 26px;
     /*border: 1px solid #000; */
@@ -177,17 +177,17 @@ div#searchArea>div#searchBG {
     background-position: right;
 
 }
-div#searchArea>div#searchBG>span {
+div#searchArea>form>div#searchBG>span {
     width: 36px;
     height: 36px;
     display: inline-block;
 }
-div#searchArea>div#searchBG>span#closeMark {
+div#searchArea>form>div#searchBG>span#closeMark {
     color: #666;
     width: 36px;
     text-align: center;
     line-height: 36px;
-
+    cursor: pointer;
 
     background-image: url(../images/common/btn_delete.png);
     background-repeat: no-repeat;
@@ -198,14 +198,14 @@ div#searchArea>div#searchBG>span#closeMark {
     visibility: hidden;
 }
 
-div#searchArea>div#searchBG>span#searchMark {
+div#searchArea>form>div#searchBG>span#searchMark {
     background-image: url(../images/contents/btn_search.gif);
     background-repeat: no-repeat;
     background-position: right;
     transform: translateY(11px);
-
+    cursor: pointer;
 }
-div#searchArea>div#searchBG>input {
+div#searchArea>form>div#searchBG>input {
     color: #666;
     width: 620px;
     font-size: 17px;
@@ -214,7 +214,7 @@ div#searchArea>div#searchBG>input {
 }
 
     /* placeholder 속성에 css적용 */
-div#searchArea>div#searchBG>input::placeholder {
+div#searchArea>form>div#searchBG>input::placeholder {
     /* 슈도 엘리먼트 속성 */
     color: #aaa;
     font-size: 19px;
