@@ -255,15 +255,74 @@ div#main_iconLNB_frame>nav {
 /* div#jusoIntro_Frame */
 div#jusoIntro_Frame {
     width: 100%;
+    padding-bottom: 40px;
     background-color: #f2f2f2;
 }
 div#jusoIntro {
-    width: 400px;
-    height: 200px;
-    border: 1px solid #f80;
+    width: 1200px;
+    border: 1px solid #aaa;
+    background-color: #fff;
     position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-12%);
 }
+/*div#jusoIntro>div {
+    border: 1px solid #000;
+}*/
 /* div#jusoIntro_Frame */
+#jusoIntro div#aboutJuso {
+    width: 280px;
+    padding: 24px;
+    background-color: #f8f8f8;
+}
+#jusoIntro div#slide {
+    overflow: hidden;
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+#jusoIntro div#jusoRoadSign {
+    padding: 40px;
+}
+#jusoIntro div#jusoExplain {
+    width: 100%;
+    padding: 80px 50px 40px 0;
+    padding-top: 80px;
+}
+#jusoIntro ul#jusoItem>li {
+    width: 310px;
+    font-size: 18px;
+    line-height: 42px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+#jusoIntro #jusoExplain>h2 {
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+#jusoIntro #jusoExplain hr {
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+#jusoIntro #jusoExplain p {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+#jusoIntro #jusoExplain p span {
+    color: #08f;
+}
+.selected {
+    color: #fff;
+    font-weight: bold;
+    background-image: url(../images/contents/tabslit_on.png);
+    background-size: 276px 44px;
+    background-repeat: no-repeat;
+}
+div#shuttleFrame {
+/*    border: 1px solid #000;*/
+}

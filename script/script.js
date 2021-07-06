@@ -48,10 +48,27 @@ $(function(){
         }else{
             $("form").submit();
         }
-
         // 텍스트박스에 포커스 설정하기
         $("input#searchWord").focus();
     });
         /* 검색창 실행 */
+
+        /* 도로명 주소 클래스 속성 추가/제거 */
+        /* ul#jusoItem>li */
+    $("ul#jusoItem>li").click(function(){
+        $("ul#jusoItem>li.selected").removeClass();
+        $(this).addClass("selected");
+    });
+        /* ul#jusoItem>li */
+        /* 도로명 주소 클래스 속성 추가/제거 */
+
+        /* 도로명 주소 슬라이드쇼 샘플(임시적용) */
+    $("ul#jusoItem>li:nth-child(2)").click(function(){
+       $("div#shuttleFrame").animate(
+       {"margin-left" : "-800px"},
+       1000
+       )
+    });
+        /* 도로명 주소 슬라이드쇼 샘플(임시적용) */
 
     });
