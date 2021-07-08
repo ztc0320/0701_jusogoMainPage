@@ -337,6 +337,7 @@ div#contents {
     width: 1200px;
     padding: 60px 0 40px;
     margin: 0 auto;
+    justify-content: space-between;
 }
 #contents>div {
     height: 320px;
@@ -345,10 +346,10 @@ div#contents {
 
     /* div#userService 630*320 */
 div#userService {
-    width: 600px;
+    width: 580px;
 }
 #userService>div#api {
-    padding: 40px 0;
+    padding: 45px 0;
     border: 1px solid #ddd;
     margin: 10px 0;
     background-color: #f5f7fc;
@@ -368,7 +369,8 @@ div#userService {
     line-height: 84px;
     border: 1px solid #ddd;
     border-radius: 45px;
-    margin: 10px auto;
+    margin: 0px auto 20px;
+
     background-color: #fff;
     display: block;
 }
@@ -386,13 +388,57 @@ div#userService {
 
     /* div#noticeBoard 300*320 */
 div#noticeBoard {
-    width: 300px;
+    width: 290px;
+}
+#noticeBoard>header {
+    padding: 0 2px;
+    /*border: 1px solid #000;*/
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+#noticeBoard>header>div#noticeControl {
+    width: 90px;
+    padding-bottom: 2px;
+    /*border: 1px solid #f00;*/
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#noticeBoard>header>#noticeControl>span {
+    width: 18px;
+    height: 18px;
+    /*border: 1px solid #000;*/
+    border-radius: 10px;
+    background-color: #909090;
+    transition: all 1s; /* 전이 효과 : 변화되는 과정을 애니메이션으로 불 수 있음*/
+    cursor: pointer;
+}
+#noticeBoard>header>#noticeControl>.noticeSelected {
+    width: 34px;
+    background-color:#1078bc;
+}
+#noticeBoard>header>#noticeControl>img {
+    margin-left: 6px;
+    cursor: pointer;
+}
+#noticeBoard>header>h2 {
+    /*border: 2px solid #f00;*/
+    margin-bottom: 4px;
+}
+#noticeBoard>div#noticeSlide {
+    width: 285px;
+    overflow: hidden;
+    /*border: 1px solid #000;*/
+}
+#noticeBoard>#noticeSlide>div#noticeShuttleFrame {
+    width: 580px;
+    /*border: 1px solid #000;*/
 }
     /* div#noticeBoard */
 
     /* div#helpCenter 300*320 */
 div#helpCenter {
-    width: 300px;
+    width: 290px;
+    border: 1px solid #000;
 }
     /* div#helpCenter */
 /* div#contnetsFrame */

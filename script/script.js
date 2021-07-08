@@ -94,5 +94,73 @@ $(function(){
     });
         /* 개발자센터 페이지 이동 */
 
+        /* 콘텐츠 영역 알림판 */
+        /* 토글 => 토큰값 */
+    var token = 0;
+    var rotationChk = setInterval(fnNoticeSlide, 5000);
+    function fnNoticeSlide() {
+        if(token == 0) {
+            $("#noticeControl>span").removeClass("noticeSelected");
+            $("#noticeControl>span").eq(1).addClass("noticeSelected");
+            $("div#noticeShuttleFrame").animate(
+                {"margin-left": "-285px"},
+                1000,
+                function(){
+                    token = 1;
+                }
+            );
+        }
+        if(token == 1) {
+            $("#noticeControl>span").removeClass("noticeSelected");
+            $("#noticeControl>span").eq(0).addClass("noticeSelected");
+           $("div#noticeShuttleFrame").animate(
+                {"margin-left": "0"},
+                1000,
+                function(){
+                    token = 0;
+                }
+            );
+        }
+    }
+        /* 클릭 했을 때 이동 */
+    $("#noticeControl>span").eq(0).click(function(){
+        $("#noticeControl>span").removeClass("noticeSelected");
+        $("#noticeControl>span").eq(0).addClass("noticeSelected");
+        $("div#noticeShuttleFrame").animate(
+            {"margin-left": "0"},
+            1000,
+            function(){
+                token = 0;
+            }
+        );
+    });
+    $("#noticeControl>span").eq(1).click(function(){
+        $("#noticeControl>span").removeClass("noticeSelected");
+        $("#noticeControl>span").eq(1).addClass("noticeSelected");
+        $("div#noticeShuttleFrame").animate(
+            {"margin-left": "-285"},
+            1000,
+            function(){
+                token = 1;
+            }
+        );
+    });
+        /* 클릭 했을 때 이동 */
+        /* 시작버튼 일시정지 버튼 */
+    var animToken = 0;
+    $("#noticeControl>img").click(function(){
+        if(animToken == 0) {
+            $(this).attr("src", "images/contents/btn_play.gif");
+            animToken = 1;
+            clearInterval(rotationChk); /* 슬라이드 순환 멈춤 */
+
+        }else {
+            $(this).attr("src", "images/contents/btn_ps.gif");
+            animToken = 0;
+            rotationChk = setInterval(fnNoticeSlide, 5000);
+        }
+    });
+        /* 시작버튼 일시정지 버튼 */
+        /* 콘텐츠 영역 알림판 끝 */
 
 });
